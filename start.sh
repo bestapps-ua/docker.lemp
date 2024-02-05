@@ -1,6 +1,6 @@
 #!/bin/sh
-mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf_orig
-mv /etc/nginx/custom.conf /etc/nginx/nginx.conf
+#mv /etc/nginx/sites-available/default /etc/nginx/sites-available/default_orig
+#mv /etc/nginx/custom.conf /etc/nginx/sites-available/default
 
 echo "Starting the nginx daemon"
 service nginx start
