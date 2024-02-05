@@ -15,6 +15,8 @@ ENV LANG en_US.utf8
 COPY start.sh /start.sh
 COPY src/nginx.conf /etc/nginx/custom.conf
 RUN chmod 755 /start.sh
+RUN mv /etc/nginx/sites-available/default /etc/nginx/sites-available/default_orig
+RUN mv /etc/nginx/custom.conf /etc/nginx/sites-available/default
 CMD /start.sh && /bin/bash
 
 
